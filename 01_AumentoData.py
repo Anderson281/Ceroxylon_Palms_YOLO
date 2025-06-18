@@ -1,10 +1,10 @@
 # This script performs data augmentation on images and YOLO-format labels using Albumentations.
-# The goal is to increase dataset diversity and improve the robustness of computer vision model training[1][2].
+# The goal is to increase dataset diversity and improve the robustness of computer vision model training.
 
-import os                          # Interacts with the operating system, creates folders, and manages files[3].
-from pathlib import Path           # Handles file paths in a clear, cross-platform way[4].
-import cv2                         # Reads and saves images to disk[5].
-import albumentations as A         # Advanced image and bounding box augmentations, compatible with YOLO[1].
+import os                          # Interacts with the operating system, creates folders, and manages files.
+from pathlib import Path           # Handles file paths in a clear, cross-platform way.
+import cv2                         # Reads and saves images to disk.
+import albumentations as A         # Advanced image and bounding box augmentations, compatible with YOLO.
 
 # 1. Define input and output directories for train, val, and test images and labels.
 input_dirs = {
