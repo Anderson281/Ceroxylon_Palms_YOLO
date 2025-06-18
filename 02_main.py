@@ -4,11 +4,11 @@
 
 import cv2
 import json
-import geopandas as gpd                        # Manipulation and analysis of vector spatial data, such as Shapefiles[1].
+import geopandas as gpd                        # Manipulation and analysis of vector spatial data, such as Shapefiles.
 import pyproj
-from shapely.geometry import box               # Creation of bounding boxes as spatial polygons[2].
-from ultralytics import YOLO                   # Loading and running YOLOv8 models for object detection[3].
-from rasterio import open as raster_open       # Reading georeferenced raster files (TIFF) and extracting spatial information[4].
+from shapely.geometry import box               # Creation of bounding boxes as spatial polygons.
+from ultralytics import YOLO                   # Loading and running YOLOv8 models for object detection.
+from rasterio import open as raster_open       # Reading georeferenced raster files (TIFF) and extracting spatial information.
 from rasterio.transform import from_origin
 
 # 1. Load the pre-trained YOLO model.
